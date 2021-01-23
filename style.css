@@ -22,7 +22,7 @@ html {
 body {
   /* font-family: "Roboto", serif; */
   font-family: "Pattaya", sans-serif;
-  color: #41c536;
+  color: #131c27;
 }
 
 h1 {
@@ -55,7 +55,7 @@ button {
   padding: 2rem 6rem;
   background: #41c536;
   border: none;
-  color: white;
+  color: #131c27;
   font-size: 1.8rem;
   cursor: pointer;
   border-radius: 1rem;
@@ -107,7 +107,6 @@ nav ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* color: #41c536; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,7 +125,7 @@ nav ul {
 #locations {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url("./img/hero1bw.jpg");
+    url("./img/louthcastle3bw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -142,9 +141,11 @@ nav ul {
 .locations-head h2 {
   padding: 5rem 0rem;
   text-decoration: none;
+  color: #41c536;
 }
 .locations-head h3 {
   padding: 4rem 0rem;
+  color: #41c536;
 }
 
 .cloud {
@@ -188,6 +189,7 @@ nav ul {
   padding: 1rem;
   line-height: 1.8;
   font-size: 1.3rem;
+  color: #41c536;
 }
 
 /* Cloud Animation */
@@ -203,7 +205,7 @@ nav ul {
 
 #contact {
   min-height: 100vh;
-  background: url("./img/louthcastle3bw.jpg");
+  background: url("./img/hero1bw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -221,12 +223,14 @@ nav ul {
 .form-head {
   text-align: center;
   padding: 3rem;
+  color: #41c536;
 }
 
 .name-form,
 .email-form {
   padding: 2rem;
   text-align: center;
+  color: #41c536;
 }
 
 .form-wrapper label {
@@ -243,6 +247,32 @@ nav ul {
 
 .form-wrapper input {
   padding: 1rem 3rem;
+}
+
+/* Footer Section */
+
+footer {
+  color: #41c536;
+  background: rgba(19, 28, 39, 1);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Media Query */
