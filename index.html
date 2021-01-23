@@ -54,8 +54,6 @@
             <h4>Navan</h4>
             <p>
               Address1 <br />
-              Address1 <br />
-              Address1 <br />
               phone numbner <br />
               email
             </p>
@@ -66,9 +64,7 @@
             </div>
             <h4>Slane</h4>
             <p>
-              Address1 <br />
-              Address1 <br />
-              Address1 <br />
+              Address2 <br />
               phone numbner <br />
               email
             </p>
@@ -79,9 +75,7 @@
             </div>
             <h4>Drogheda</h4>
             <p>
-              Address1 <br />
-              Address1 <br />
-              Address1 <br />
+              Address3 <br />
               phone numbner <br />
               email
             </p>
@@ -92,9 +86,7 @@
             </div>
             <h4>Mornington</h4>
             <p>
-              Address1 <br />
-              Address1 <br />
-              Address1 <br />
+              Address4 <br />
               phone numbner <br />
               email
             </p>
@@ -108,14 +100,33 @@
         <header class="form-head">
           <h2>Contact Us</h2>
         </header>
-        <form name="boynegreenway" method="POST" data-netlify="true">
+        <form
+          name="boynegreenway"
+          netlify-honeypot="bot-field"
+          method="POST"
+          data-netlify="true"
+        >
           <div class="name-form">
+            <input type="hidden" id="bot-field" name="bot-field" />
             <label for="name">Name:</label>
             <input id="name" type="text" name="name" required minlength="4" />
           </div>
           <div class="email-form">
             <label for="email">Email:</label>
             <input id="email" type="email" required name="_replyto" />
+          </div>
+          <div class="email-form-textarea">
+            <label for="Message">Contact Boyne Greenway Bike Hire</label>
+            <textarea
+              id="Message"
+              name="Message"
+              rows="4"
+              cols="50"
+              required
+              minlength="10"
+            >
+            Site develoment in progress.  You can still contact use via the form.
+            </textarea>
           </div>
           <button value="Send" type="submit">Submit</button>
         </form>

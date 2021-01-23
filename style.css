@@ -227,7 +227,8 @@ nav ul {
 }
 
 .name-form,
-.email-form {
+.email-form,
+.email-form-textarea {
   padding: 2rem;
   text-align: center;
   color: #41c536;
@@ -247,6 +248,11 @@ nav ul {
 
 .form-wrapper input {
   padding: 1rem 3rem;
+}
+
+.email-form-textarea {
+  font-size: 1em;
+  font-weight: bold;
 }
 
 /* Footer Section */
