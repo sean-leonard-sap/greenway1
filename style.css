@@ -1,0 +1,281 @@
+/* Global Styles */
+
+/*Remove all standard styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* A typical method is to set the HTML font-size to 62.5%. 
+That's because 62.5% of 16px (typical default browser font-size) is 10px. 
+
+That would still make 1.6rem = 16px. This now means that if the user's 
+default browser font-size is changed to, for example, 20px, 
+1.6rem would now equal 20px. */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Roboto", serif; */
+  font-family: "Pattaya", sans-serif;
+  color: #41c536;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: #41c536;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #41c536;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: background 0.5s ease-in-out;
+  /*font-family: "Pattaya", sans-serif; */
+}
+button:hover {
+  background: #b2d6b0;
+}
+
+/* Nav Section With HERO */
+
+.main-head {
+  background: #131c27;
+  color: #41c536;
+  position: sticky;
+  top: 0px0px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  /* font-family: "Pattaya", sans-serif; */
+}
+
+#logo {
+  flex: 2 1 40rem;
+  /* font-family: "Pattaya", sans-serif; */
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 90vh;
+  background: url("./img/contactus2bw.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: #41c536; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  font-family: "Ultra", sans-serif;
+  font-weight: 400;
+  padding-bottom: 10rem;
+}
+
+/* locations */
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/hero1bw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 5rem 0rem;
+  text-decoration: none;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 0%;
+  z-index: 0;
+  animation: cloudAnimation 2.5s infinite alternate ease-in-out;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 10vh;
+  align-items: bottom;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 10rem;
+  min-height: 5vh;
+  margin: 2rem 5rem;
+  background: #131c27;
+  font-family: "Roboto", serif;
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.card h4,
+.card p {
+  padding: 1rem;
+  line-height: 1.8;
+  font-size: 1.3rem;
+}
+
+/* Cloud Animation */
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+#contact {
+  min-height: 100vh;
+  background: url("./img/louthcastle3bw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: #131c27;
+  width: 30%;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 3rem;
+}
+
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.9);
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
