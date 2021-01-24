@@ -72,7 +72,7 @@ button:hover {
   background: #131c27;
   color: #41c536;
   position: sticky;
-  top: 0px0px;
+  top: 0px;
   z-index: 3;
 }
 
@@ -252,7 +252,7 @@ nav ul {
 
 .email-form-textarea {
   font-size: 1em;
-  font-weight: bold;
+  padding: 1rem 3rem;
 }
 
 /* Footer Section */
@@ -282,6 +282,28 @@ footer ul {
 }
 
 /* Media Query */
+@media screen and (max-width: 1405px) {
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+}
+
+/* Media Query */
+@media screen and (max-width: 1142px) {
+  .form-head {
+    text-align: left;
+    padding: 2rem;
+  }
+  .form-wrapper {
+    width: 95%;
+    margin-top: 0;
+  }
+}
+
+/* Media Query */
 @media screen and (max-width: 932px) {
   html {
     font-size: 45%;
@@ -307,6 +329,7 @@ footer ul {
   }
   .form-wrapper {
     width: 100%;
+    margin-top: 0;
   }
   footer {
     text-align: center;
