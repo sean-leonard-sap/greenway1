@@ -76,6 +76,10 @@ button:hover {
   z-index: 3;
 }
 
+.main-head h1 {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   width: 90%;
