@@ -105,6 +105,20 @@ nav ul {
   font-weight: 400;
 }
 
+.burger {
+  cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #41c536;
+  pointer-events: none;
+}
+
 .hero {
   min-height: 90vh;
   background: url("./img/contactus2bw.jpeg");
@@ -208,7 +222,7 @@ nav ul {
 }
 
 #contact {
-  min-height: 100vh;
+  min-height: 90vh;
   background: url("./img/hero1bw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,6 +233,7 @@ nav ul {
 }
 
 .form-wrapper {
+  max-height: 75vh;
   background: #131c27;
   width: 30%;
   border-radius: 20px;
@@ -257,6 +272,30 @@ nav ul {
 .email-form-textarea {
   font-size: 1em;
   padding: 1rem 3rem;
+}
+
+/* Nav Section */
+
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: #41c536;
+  background: rgba(19, 28, 39, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.overlay-content {
+  flex-direction: column; /*change the text in the pop-out */
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  padding-bottom: 10rem;
 }
 
 /* Footer Section */
@@ -310,7 +349,7 @@ footer ul {
 /* Media Query */
 @media screen and (max-width: 932px) {
   html {
-    font-size: 45%;
+    font-size: 55%;
   }
   nav {
     text-align: center;
