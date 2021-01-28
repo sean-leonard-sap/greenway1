@@ -22,7 +22,7 @@ html {
 body {
   /* font-family: "Roboto", serif; */
   font-family: "Pattaya", sans-serif;
-  color: #131c27;
+  background-color: #131c27;
 }
 
 h1 {
@@ -321,6 +321,53 @@ footer ul {
   list-style: none;
   flex: 1 1 40rem;
   justify-content: space-between;
+  align-items: center;
+}
+
+/* photos */
+.search-form {
+  padding: 2rem;
+  display: table;
+  margin: 0 auto;
+}
+.search-form input {
+  font-size: 2rem;
+  border: none;
+  padding: 2rem 4rem;
+}
+
+.gallery {
+  width: 100%;
+  color: #41c536;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
